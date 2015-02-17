@@ -3,6 +3,7 @@ require './app/server'
 require 'capybara/rspec'
 
 Capybara.app = Sinatra::Application
+Capybara.default_wait_time = 15
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
